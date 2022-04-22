@@ -7,3 +7,15 @@
 .font1 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+header {
+  background-color: #495fa6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-size {
+  width: 60px;
+  height: 60px;
+}
