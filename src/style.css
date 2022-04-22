@@ -2,20 +2,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.font1 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body {
+  margin-top: 60px;
+  background-color: #eaeeff;
+  overflow-x: hidden;
 }
 
 header {
   background-color: #495fa6;
   display: flex;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .logo-size {
   width: 60px;
   height: 60px;
+}
+
+#desktop-menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  margin: 0 10px;
+  color: #F6AE84;
+  text-decoration: none;
+}
+
+.mobile-banner {
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #headline {
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 50px;
+    padding: 5px;
+  }
+
+  .intro {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #mobile-nav,
+  .mobile-banner {
+    display: none;
+  }
 }

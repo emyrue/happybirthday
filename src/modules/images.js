@@ -1,10 +1,16 @@
 import hamburger from '../icons/hamburger.svg';
 import logo from '../icons/logo.png';
+import mobile from '../shapes1/mobilebanner.png';
 
 const menu = new Image();
-menu.src = hamburger;
 const myLogo = new Image();
-myLogo.src = logo;
-myLogo.className = 'logo-size';
+const mobileBanner = new Image();
 
-export { menu, myLogo };
+menu.src = hamburger;
+myLogo.src = logo;
+mobileBanner.src = mobile;
+
+myLogo.className = 'logo-size';
+mobileBanner.className = 'mobile-banner';
+
+export { menu, myLogo, mobileBanner };
