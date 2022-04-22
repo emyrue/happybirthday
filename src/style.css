@@ -41,12 +41,21 @@ header {
 
 .mobile-banner {
   width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.desktop-banner {
+  width: 50%;
 }
 
 @media only screen and (max-width: 991px) {
-  #desktop-nav {
+  #desktop-nav,
+  .desktop-banner {
     display: none;
   }
+
+  /* Mobile headline */
 
   #headline {
     display: flex;
@@ -58,10 +67,14 @@ header {
   h1 {
     font-size: 50px;
     padding: 5px;
+    text-align: center;
   }
 
   .intro {
     padding: 5px;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -69,5 +82,21 @@ header {
   #mobile-nav,
   .mobile-banner {
     display: none;
+  }
+
+  /* Desktop headline */
+  #headline {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 80px;
+    padding: 50px 30px;
+  }
+
+  .intro {
+    padding: 30px;
+    font-size: 25px;
   }
 }

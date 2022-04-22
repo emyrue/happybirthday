@@ -1,5 +1,6 @@
 import './style.css';
-import { menu, myLogo, mobileBanner } from './modules/images.js';
+import { menu, myLogo, mobileBanner, desktopBanner } from './modules/images.js';
+import { head } from 'lodash';
 
 // Elements
 const mobileNav = document.getElementById('mobile-nav');
@@ -10,3 +11,4 @@ const headline = document.getElementById('headline');
 mobileNav.appendChild(menu);
 logo.appendChild(myLogo);
 headline.appendChild(mobileBanner);
+headline.appendChild(desktopBanner);
